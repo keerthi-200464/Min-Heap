@@ -1,0 +1,17 @@
+public class MaxHeap {
+    public static void main(String[] args) {
+        // Create a max-heap using a custom comparator
+        PriorityQueue<Integer> maxHeap = new PriorityQueue<>(Collections.reverseOrder());
+
+        // Add elements to the heap
+        maxHeap.add(10);
+        maxHeap.add(5);
+        maxHeap.add(20);
+        maxHeap.add(3);
+
+        // Poll elements to print in descending order
+        while (!maxHeap.isEmpty()) {
+            System.out.print(maxHeap.poll() + " ");
+        }
+    }
+}
